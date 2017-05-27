@@ -182,7 +182,7 @@ setup(
     ext_modules =  [
         Extension(
             "spidermonkey",
-            sources=find_sources(),
+            sources=sorted(find_sources()),
             **platform_config()
         )
     ],
